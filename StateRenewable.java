@@ -9,7 +9,6 @@ public class StateRenewable {
     private double renewableGenTWh;      // renewable generation (TWh)
     private double percentOfUSRenewable; // share of total U.S. renewables
     private double co2MtPerTWh;          // CO2 intensity (Mt per TWh)
-
     /**
      * Construct a StateRenewable.
      * @param name state or district name

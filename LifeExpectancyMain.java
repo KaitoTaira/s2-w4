@@ -1,4 +1,4 @@
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class LifeExpectancyMain {
     
@@ -13,12 +13,13 @@ public class LifeExpectancyMain {
             analyzer.readFromFile("life-expectancy-data.csv");
 
             // Display various analyses
-            analyzer.displayAllCountries();
-            analyzer.displayByRegion("Asia");
+            // analyzer.displayAllCountries();
+            // analyzer.displayByRegion("Asia");
             analyzer.displayStatistics();
 
-        } catch (FileNotFoundException e) {
-            System.err.println("File not found: " + e.getMessage());
+        } catch (IOException e) {
+            System.err.println("Spell it correctly: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
